@@ -1,0 +1,327 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #000;
+    font-size: 15px;
+    line-height: 1.5;
+}
+a {
+    color: #262626;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.container {
+    width: 90%;
+    max-width: 73.33rem;
+    margin: auto;
+}
+
+/* Nav */
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    padding: 1.3rem 0;
+    font-size: 0.85rem;
+}
+.main-nav .logo {
+    width: 6rem;
+}
+.main-nav ul {
+    display: flex;
+}
+.main-nav ul li {
+    padding: 0 0.70rem;
+}
+.main-nav ul li a {
+    padding-bottom: 0.15rem;
+}
+.main-nav ul li a:hover {
+    border-bottom: 0.14rem solid #757575;
+}
+.main-nav ul.main-menu {
+    flex: 1;
+    margin-left: 1.3rem;
+}
+.menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 1.3rem;
+    right: 2rem;
+    z-index: 2;
+    display: none;
+}
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: normal;
+    padding: 0.5rem 1.3rem;
+    background: #2d9cdb;
+    color: #fff;
+    font-size: 0.75rem;
+    border-radius: 0.25rem;
+    margin-top: 0.75rem;
+}
+.btn:hover {
+    opacity: 0.9;
+}
+.dark {
+    color:#fff;
+}
+.dark .btn {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Showcase */
+
+.showcase {
+    width: 100%;
+    height: 23rem;
+    background: url(./images/RE3zxJd.jfif) no-repeat center center/cover;
+    display: flex;
+    font-size: 0.8rem;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:flex-start;
+    text-align: center;
+    color: #262626;
+    padding: 1.3rem;;
+    border-radius: 0.25rem;
+    margin-bottom: 3rem;
+    margin-top: 1.0rem;
+} 
+
+/* Home Cards */
+
+.home-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.3rem;
+    font-size: 0.8rem;
+    margin-bottom: 3rem;
+}
+.home-cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.home-cards img {
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-top: 1.8rem;
+    border-radius: 0.25rem;
+}
+.home-cards h3 {
+    margin-bottom: 0.3rem;
+}
+.home-cards p {
+    width: 50%;
+}
+.home-cards a {
+    display: inline-block;
+    margin-top: 0.75rem;
+    color: #2d9cdb;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.7rem;
+    bottom: 0;
+}
+.home-cards a:hover i {
+    margin-left: 0.75rem;
+}
+
+/* Xbox */
+
+.xbox {
+    width: 100%;
+    height: 23rem;
+    background: url(./images/vROFc2.jpg) no-repeat center center/cover;
+    margin-bottom: 5rem;
+    border-radius: 0.25rem;
+}
+.xbox .content {
+    width: 40%;
+    padding: 4.15rem 0 0 2rem;
+}
+.xbox h2 {
+    color: #EB5757
+}
+.xbox p, .carbon p {
+    margin: 0.7rem 0 1.3rem;
+    font-size: 0.85rem;
+}
+
+/* Carbon */
+
+.carbon {
+    height: 24rem;
+    width: 100%;
+    background: url(./images/windows-7-black-wallpaper-1920x1200-for-iphone-5-WTG20066029.jpg) 
+    no-repeat center center/cover;  
+    border-radius: 0.25rem;
+    margin-bottom: 3rem;
+}
+.carbon .content {
+    width: 30%;
+    padding: 3.5rem 0 0 4rem; 
+}
+
+
+/* Follow */
+
+.follow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 2rem 0 2rem;
+}
+.follow p {
+    margin-right: 1.8rem;
+    margin-left: 0.4rem;
+    
+}
+.follow * {
+   margin-right: 0.5rem;
+    
+}
+
+/* Links */
+
+.links {
+    background-color: #f2f2f2;
+    color: #616161;
+    font-size: 0.8rem;
+    padding: 2.3rem 0;
+}
+.links-inner {
+    max-width: 73rem;
+    margin: 0 auto;
+    padding: 0 1.3rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 0.75rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+.links li {
+    line-height: 2.8;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #f2f2f2;
+    color: #616161;
+    font-size: 0.8rem;
+    padding: 1.3rem 0;
+}
+.footer-inner {
+    max-width: 73rem;
+    margin: 0 auto;
+    padding: 0 1.3rem 0 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer div {
+    margin-bottom: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+.footer div i {
+    margin-right: 0.8rem;
+}
+.footer ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer li {
+    margin-right: 1.75rem;
+    margin-bottom: 1.3rem;
+}
+
+@media (max-width:700px) {
+    .menu-btn {
+        display: block;
+    }
+    .menu-btn:hover {
+        opacity: 0.6;
+    }
+    .main-nav ul.right-menu {
+        margin-right: 3rem;
+    }
+    .main-nav ul.main-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #f2f2f2;
+        width: 40%;
+        height: 100%;
+        border-right: #ccc 1px solid;
+        opacity: 0.9;
+        padding: 2rem;
+        transform: translateX(-35rem);
+        transition: transform 0.5s ease-in-out;
+    }
+    .main-nav ul.main-menu li {
+        padding: 0.75rem;
+        border-bottom: #ccc 1px solid;
+        font-size: 0.9rem;
+    }
+    .main-nav ul.main-menu li:last-child {
+        border: none;
+    }
+    .main-nav ul.main-menu.show {
+        transform: translateX(-1.3rem);
+    }
+    .home-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .xbox .content p {
+        display: none;
+    }
+    .carbon .content {
+        width: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1.8rem 0.8rem 1.2rem 0.8rem;
+        margin: 0 1rem 0 1rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .carbon p {
+        margin-top: auto;
+        text-align: center;
+    }
+    .links .links-inner {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width:500px) {
+    .home-cards {
+        grid-template-columns: 1fr;
+    }
+    .links .links-inner {
+        grid-template-columns: 1fr;
+    }
+    .links .links-inner ul {
+        margin-bottom: 1.3rem;
+        text-align: center;
+    }
+}
+
